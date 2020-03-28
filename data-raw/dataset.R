@@ -5,7 +5,7 @@ cn <- c("date", "country_region", "province_state", "type",
 filename <- 'data-raw/c19trw.csv'
 c19trw <- read.csv2(filename, na.strings = "",
                    colClasses = c("POSIXct", "integer", "integer",
-                                "integer", "integer"))
+                                "integer", "integer", "integer", "integer"))
 c19trl <- reshape2::melt(c19trw, id.vars = c("date"), variable.name = "type", value.name = "cases")
 c19trl$type <- as.character(c19trl$type)
 c19trl$country_region <- "Turkey"
