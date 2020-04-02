@@ -6,9 +6,9 @@
 \alias{c19trl}
 \title{Covid-19 Turkey Dataset}
 \format{
-An object of class \code{data.frame} with 21 rows and 7 columns.
+An object of class \code{data.frame} with 23 rows and 7 columns.
 
-An object of class \code{data.frame} with 126 rows and 7 columns.
+An object of class \code{data.frame} with 138 rows and 7 columns.
 }
 \source{
 \url{https://twitter.com/drfahrettinkoca}
