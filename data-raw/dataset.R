@@ -20,3 +20,18 @@ substring(c19trl$type, 1) <- toupper(substring(c19trl$type, 1, 1))
 c19trl$type <- factor(c19trl$type)
 
 use_data(c19trw, c19trl, overwrite = TRUE)
+
+# ---------
+
+filename <- 'data-raw/c19tr_provinces.csv'
+c19trp <- read.csv2(filename, na.strings = "")
+c19trp <- c19trp[order(c19trp$province),]
+for (i in 1:3) c19trp[,i] <- factor(c19trp[,i])
+c19trp$lat <- as.numeric(c19trp$lat)
+c19trp$long <- as.numeric(c19trp$long)
+
+c19trp <- reshape2::melt(c19trp, id.vars = 1:6, variable.name = "date", value.name = "cases")
+c19trp$date <- as.Date(c19trp$date, "X%Y.%m.%d")
+c19trp <- c19trp[,c(7, 2:3, 8)]
+
+use_data(c19trp, overwrite = TRUE)

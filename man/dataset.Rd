@@ -4,11 +4,14 @@
 \name{c19trw}
 \alias{c19trw}
 \alias{c19trl}
+\alias{c19trp}
 \title{Covid-19 Turkey Dataset}
 \format{
-An object of class \code{data.frame} with 23 rows and 7 columns.
+An object of class \code{data.frame} with 25 rows and 7 columns.
 
-An object of class \code{data.frame} with 138 rows and 7 columns.
+An object of class \code{data.frame} with 150 rows and 7 columns.
+
+An object of class \code{data.frame} with 162 rows and 4 columns.
 }
 \source{
 \url{https://twitter.com/drfahrettinkoca}
@@ -17,6 +20,8 @@ An object of class \code{data.frame} with 138 rows and 7 columns.
 \code{c19trw}: Wide format
 
 \code{c19trl}: Long format
+
+\code{c19trp}: Dataset for provinces
 }
 \details{
 Covid-19 datasets for turkey.

@@ -12,3 +12,8 @@
 #' @description \code{c19trl}: Long format
 #' @rdname dataset
 "c19trl"
+
+#' @usage NULL
+#' @description \code{c19trp}: Dataset for provinces
+#' @rdname dataset
+"c19trp"
