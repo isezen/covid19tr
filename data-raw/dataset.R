@@ -2,11 +2,11 @@ library(usethis)
 
 cn <- c("date", "country_region", "province_state", "type",
         "cases", "lat", "long")
-filename <- 'data-raw/c19trw.csv'
-c19trw <- read.csv2(filename, na.strings = "",
+filename <- 'data-raw/c19tr.csv'
+c19tr <- read.csv2(filename, na.strings = "",
                    colClasses = c("Date", "integer", "integer",
                                 "integer", "integer", "integer", "integer"))
-c19trl <- reshape2::melt(c19trw, id.vars = c("date"), variable.name = "type", value.name = "cases")
+c19trl <- reshape2::melt(c19tr, id.vars = c("date"), variable.name = "type", value.name = "cases")
 c19trl$type <- as.character(c19trl$type)
 c19trl$country_region <- "Turkey"
 c19trl$province_state <- NA
@@ -19,7 +19,7 @@ c19trl$province_state <- factor(c19trl$province_state)
 substring(c19trl$type, 1) <- toupper(substring(c19trl$type, 1, 1))
 c19trl$type <- factor(c19trl$type)
 
-use_data(c19trw, c19trl, overwrite = TRUE)
+use_data(c19tr, c19trl, overwrite = TRUE)
 
 # ---------
 

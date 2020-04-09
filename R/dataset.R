@@ -3,10 +3,10 @@
 #' Covid-19 datasets for turkey.
 #'
 #' @usage NULL
-#' @description \code{c19trw}: Wide format
+#' @description \code{c19tr}: Wide format
 #' @rdname dataset
 #' @source \url{https://twitter.com/drfahrettinkoca}
-"c19trw"
+"c19tr"
 
 #' @usage NULL
 #' @description \code{c19trl}: Long format
