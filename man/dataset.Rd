@@ -7,9 +7,9 @@
 \alias{c19trp}
 \title{Covid-19 Turkey Dataset}
 \format{
-An object of class \code{data.frame} with 45 rows and 7 columns.
+An object of class \code{data.frame} with 49 rows and 8 columns.
 
-An object of class \code{data.frame} with 270 rows and 7 columns.
+An object of class \code{data.frame} with 343 rows and 5 columns.
 
 An object of class \code{data.frame} with 162 rows and 4 columns.
 }
